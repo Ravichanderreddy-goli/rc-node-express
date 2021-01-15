@@ -18,6 +18,9 @@ app.get('/help',(req,res)=>{
 app.get('/help/ravi',(req,res)=>{
     res.send('ravi is there for help')
 })
+app.get('/help/details',(req,res)=> {
+    res.send('details are required for help')
+})
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
 })
